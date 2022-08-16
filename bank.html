@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inside bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-4xl md:text-5xl text-center mt-5">Lets have <span class="font-bold text-red-900">SOME FUN</span></h1>
+    </header>
+    <main>
+        <!-- update section  -->
+        <section class="mt-8">
+            <div class="grid grid-cols-3  w-5/6 mx-auto">
+                <div class="bg-blue-500 p-4 md:p-8  w-11/12 mx-auto text-white rounded-xl">
+                    <h3 class="text-xs md:text-lg">Deposit</h3>
+                    <h1 class="text-2xl md:text-5xl">$<span id="deposit-total">00</span> </h1>
+                </div>
+                <div class="bg-blue-500 p-4 md:p-8  w-11/12 mx-auto text-white rounded-xl">
+                    <h3 class="text-xs md:text-lg">Withdraw</h3>
+                    <h1 class="text-2xl md:text-5xl">$<span id="withdraw-total">00</span></h1>
+                </div>
+                <div class="bg-blue-500 p-4 md:p-8  w-11/12 mx-auto text-white rounded-xl">
+                    <h3 class="text-xs md:text-lg">Balance</h3>
+                    <h1 class="text-2xl md:text-5xl">$<span id="total-amount">1000</span></h1>
+                </div>
+            </div>
+        </section>
+        <!-- deposit Withdraw section  -->
+        <section class="mt-8">
+            <div class="grid grid-cols-2 w-5/6 mx-auto">
+                <div class="bg-orange-900 p-4 md:p-8 w-11/12 mx-auto rounded-xl">
+                    <h3 class=" text-xs md:text-lg mb-3 text-white "> Write Deposit Amount</h3>
+                    <input class="w-9/12 block p-0 md:p-1 mb-1" placeholder="deposit amount" type="text" name=""
+                        id="deposit-amount">
+                    <button id="btn-deposit" class="bg-orange-600 hover:bg-zinc-800 px-4 py-1 mt-2 text-white">ADD</button>
+                </div>
+
+                <div class="bg-orange-900 p-4 md:p-8 w-11/12 mx-auto  rounded-xl">
+                    <h3 class="text-xs md:text-lg  mb-3 text-white "> Write Withdraw Amount</h3>
+                    <input class="w-9/12 block p-0 md:p-1 mb-1" placeholder="withdraw amount" type="text" name=""
+                        id="withdraw-field">
+                    <button id="btn-withdraw" class="bg-orange-600 hover:bg-zinc-800 px-4 py-1 mt-2 text-white">WITHDRAW</button>
+                </div>
+
+                </div>
+        </section>
+    </main>
+    <script src="./deposit.js"></script>
+    <script src="./withdraw.js"></script>
+</body>
+
+</html>
